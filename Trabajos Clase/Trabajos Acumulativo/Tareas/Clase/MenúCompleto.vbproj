@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C19D971E-46FB-4D92-837B-CF8C1C724C1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MenúCompleto.My.MyApplication</StartupObject>
+    <RootNamespace>MenúCompleto</RootNamespace>
+    <AssemblyName>MenúCompleto</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MenúCompleto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MenúCompleto.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arreglos.Designer.vb">
+      <DependentUpon>Arreglos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bolsa solidaria.Designer.vb">
+      <DependentUpon>bolsa solidaria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bolsa solidaria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contratar.Designer.vb">
+      <DependentUpon>Contratar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contratar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dsEstudiantes.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEstudiantes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEstudiantes.vb">
+      <DependentUpon>dsEstudiantes.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiantes.Designer.vb">
+      <DependentUpon>Estudiantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Estudiantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Galeria.Designer.vb">
+      <DependentUpon>Galeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Galeria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ilustrador.Designer.vb">
+      <DependentUpon>Ilustrador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ilustrador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Arreglos.resx">
+      <DependentUpon>Arreglos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bolsa solidaria.resx">
+      <DependentUpon>bolsa solidaria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contratar.resx">
+      <DependentUpon>Contratar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estudiantes.resx">
+      <DependentUpon>Estudiantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Galeria.resx">
+      <DependentUpon>Galeria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ilustrador.resx">
+      <DependentUpon>Ilustrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dsEstudiantes.xsc">
+      <DependentUpon>dsEstudiantes.xsd</DependentUpon>
+    </None>
+    <None Include="dsEstudiantes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEstudiantes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEstudiantes.xss">
+      <DependentUpon>dsEstudiantes.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono cerrar FN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mobile-Menu-Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleados1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clientes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\producto1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trxx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trxx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trxx11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tableta-grafica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crayola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro-de-la-compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comercio-y-compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recluta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contratar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inktober1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inktober11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inktober4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inktober12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inktober2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inktober3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inktober41.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ink2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ink3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banksy.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sophie.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MColan1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
